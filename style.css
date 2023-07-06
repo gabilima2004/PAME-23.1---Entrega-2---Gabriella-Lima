@@ -1,15 +1,21 @@
 body{
-    margin: 0;
-    padding: 0;
-        
+    margin: 0px;
+    padding: 0px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
 }
+
 .mainlogin {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(hwb(0 0% 100% / 0.859), rgba(0, 0, 0, 0.835)), url('Foto_Fluxo.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     display: flexbox;
+    justify-content: center;
+    align-items: center;
 }
     
 
@@ -27,12 +33,19 @@ body{
     
 }
 .partedebaixo{
-    width: 100vw;
-    height: 100vh;
+    background-color: black;
+    width: 30%;
+    height: 40%;
+    border-radius: 2vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -43,15 +56,74 @@ body{
 
 }
 
+.card-login > h1{
+    color:black;
+    font-weight: 800;
+    margin: 2; 
+}
+
 .textfield{
-    color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin: 10px;
 }
+
 
 .textfield > input{
     width: 100%;
-    
+    border: 2;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.364);
+    color: black;
+    color: #f0ffffde;
+    font-size: 12pt;
+    outline: auto;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color:#f0ffffde
+    margin-bottom: 10px;
+
+}
+
+.textfield > input::placeholder{
+    color: #f0fff094;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: 2;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    background: #00ff88;
+    cursor: pointer;
+}
+
+.bnt-entrar{
+    width: 60%;
+    height: 8%;
+    font-size: 16px;
+    font-weight: normal;
+    display: flexbox;
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.Icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
 }
