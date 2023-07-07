@@ -3,79 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"
-
+    <title>document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!--Parte superior-->
     <div class="header">
-        <div class="headerconteudo">
-            <!--Imagem do spotify-->
-            <img src="\imagens\Spotify-Icon.png" alt="Logo" class="logo">
-            <!--Título-->
-            <h1 class="spotfluxo">Spotfluxo</h1>
-        </div>  
-    </div>  
-    <!--Login-->
-    <div class="mainlogin">
-        <!--<div class="background-overlay"></div>-->
-            <div class="loginform">
-                <h1>Entrar no Spotfluxo</h1>
-                <div class="loginplataformas">
-                <!--Botões para entrar a partir de outra plataforma-->
-                    <div class="plataformas">
-                        <button class="google-login">
-                            <img src="\imagens\Google-Icon.png" alt="Google Logo" class="platform-icon">
-                            Continuar Com O Google
-                    </div>
-                    <div class="plataformas">
-                        <button class="facebook-login">
-                            <img src="\imagens\Facebook-Icon.png" alt="Facebook Logo" class="platform-icon">
-                            Continuar Com O Facebook
-                        </button> 
-                    </div>
-                    <div class="plataformas">
-                        <button class="apple-login">
-                            <img src="\imagens\apple.png" alt="Apple Logo" class="platform-icon">
-                            Continuar Com A Apple
-                        </button>
-                    </div>
-                    <div class="plataformas">
-                        <button class="telefone">
-                        Continuar Com Um Número De Telefone
-                        </button>
-                    </div>
+        <!--Imagem do spotify-->
+        <img src=".\imagens\Spotify-Icon.png" alt="Logo" class="logo">
+        <!--Título-->
+        <h2 class="spotfluxo">Spotfluxo</h2>
+    </div>
+
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Entrar no Spotfluxo</h2>
+            <form action="#">
+                <div class="login-plataforma">
+                    <button id="googlebotao" type="checkbox" class="google-login">
+                        <img src=".\imagens\Google-Icon.png" alt="Google Logo" class="platform-icon">
+                        Continuar Com O Google
+                    </button>
                 </div>
-                <div class="card-login">
-                    <div class="textfield">
-                        <label for="usuario">E-mail ou nome de usuário</label>
-                        <input type="text" name="usuario" placeholder="E-mail ou nome de usuário">
-                    </div>
-                    <div class="textfield">
-                        <label for="senha">Senha</label>
+                <div class="login-plataforma">
+                    <button id="facebookbotao" type="checkbox" class="facebook-login">
+                        <img src=".\imagens\Facebook-Icon.png" alt="Facebook Logo" class="platform-icon">
+                        Continuar Com O Facebook
+                    </button> 
+                </div>
+                <div class="login-plataforma">
+                    <button id="applebotao" type="checkbox" class="apple-login">
+                        <img src=".\imagens\apple.png" alt="Apple Logo" class="platform-icon">
+                        Continuar Com A Apple
+                    </button>
+                </div>
+                <div class="login-plataforma">
+                    <button id="telefonebotao" type="checkbox" class="telefone">
+                        Continuar Com Um Número De Telefone
+                    </button>
+                </div>
+                <div class="linha"></div>
+                <div class="input-box">
+                    <label for="usuario">E-mail ou nome de usuário</label>
+                    <input type="email" id="email" name="usuario" placeholder="E-mail ou nome de usuário">
+                </div>
+                <div class="input-box">
+                    <label for="senha">Senha</label>
                         <div class="password-container">
-                            <input type="password" name="Senha" placeholder="Senha">
+                            <input type="password" id="senha" name="Senha" placeholder="Senha">
                             <button type="button" id="toggle-password">
-                                <img src="\imagens\Blind.png" alt="Olho fechado" class="eye-closed">
-                                <img src="\imagens\Eye.png" alt="Olho aberto" class="eye-open">
+                                <img src=".\imagens\Blind.png" alt="Olho fechado" class="eye-closed">
+                                <img src=".\imagens\Eye.png" alt="Olho aberto" class="eye-open">
                             </button>
                         </div>
-                    </div>
-                    <button class="btn-login">Entrar</button>
-                    <div class="login-options">
-                        <a href="#">Esqueceu sua senha?</a>
-                    </div>
-                    <div class="login-options">
-                        <p class="message">Não tem uma conta? </p><a href="#">Inscrever-se no Spotfluxo</a>
-                    </div>
                 </div>
-            </div>
+                <div class="remember">
+                    <label><input type="toggle-button" id="lembrar"><h3>Lembrar de mim</h3></label>
+                </div>
+                <button id="entrarbotao" type="submit" class="btn">Entrar</button>
+                <div class="forgot">
+                    <a href="#" type="checkbox" id="esqueceusenha">Esqueceu sua senha?</a>
+                </div>
+                <div class="login-register">
+                    <p class="message">Não tem uma conta?</p><a href="#" type="checkbox" id="inscreverbotao">Inscrever-se no Spotfluxo</a>
+                </div>
+            </form>
         </div>
     </div>
-    <script>
-        //parte do javascript
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
 
