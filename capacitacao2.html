@@ -4,36 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"
 
 </head>
 <body>
+    <!--Parte superior-->
+    <div class="header">
+        <div class="headerconteudo">
+            <!--Imagem do spotify-->
+            <img src="\imagens\Spotify-Icon.png" alt="Logo" class="logo">
+            <!--Título-->
+            <h1 class="spotfluxo">Spotfluxo</h1>
+        </div>  
+    </div>  
+    <!--Login-->
     <div class="mainlogin">
-        <div class="partedecima">
-            <img src="./assets/Spotify-Icon.png" alt="">
-            <h1>Spotfluxo</h1>
-        </div>
-        <div class="partedebaixo">
-            <h1>Entrar no Spotfluxo</h1>
-            <div class="botoespartedebaixo">
-                <button class="btn-entrar"><img src="Google-Icon.png" alt="" class="Icon"><h3>Continuar Com O Google</h3></button>
-            </div>
-            <div class="botoespatedebaixo">
-                <button class="btn-entrar"><img src="Facebook-Icon.png" alt="" class="Icon"><h3>Continuar Com O Facebook</h3></button>
-            </div>
-            <div class="botoespatedebaixo">
-                <button class="btn-entrar"><img src="apple.png" alt="" class="Icon"><h3>Continuar Com A Apple</h3></button>
-            </div>
-            <div class="card-login">
-                <div class="textfield">
-                    <label for="usuario">E-mail ou nome de usuário</label>
-                    <input type="text" name="usuario" placeholder="E-mail ou nome de usuário">
+        <!--<div class="background-overlay"></div>-->
+            <div class="loginform">
+                <h1>Entrar no Spotfluxo</h1>
+                <div class="loginplataformas">
+                <!--Botões para entrar a partir de outra plataforma-->
+                    <div class="plataformas">
+                        <button class="google-login">
+                            <img src="\imagens\Google-Icon.png" alt="Google Logo" class="platform-icon">
+                            Continuar Com O Google
+                    </div>
+                    <div class="plataformas">
+                        <button class="facebook-login">
+                            <img src="\imagens\Facebook-Icon.png" alt="Facebook Logo" class="platform-icon">
+                            Continuar Com O Facebook
+                        </button> 
+                    </div>
+                    <div class="plataformas">
+                        <button class="apple-login">
+                            <img src="\imagens\apple.png" alt="Apple Logo" class="platform-icon">
+                            Continuar Com A Apple
+                        </button>
+                    </div>
+                    <div class="plataformas">
+                        <button class="telefone">
+                        Continuar Com Um Número De Telefone
+                        </button>
+                    </div>
                 </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="Senha" placeholder="Senha">
+                <div class="card-login">
+                    <div class="textfield">
+                        <label for="usuario">E-mail ou nome de usuário</label>
+                        <input type="text" name="usuario" placeholder="E-mail ou nome de usuário">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <div class="password-container">
+                            <input type="password" name="Senha" placeholder="Senha">
+                            <button type="button" id="toggle-password">
+                                <img src="\imagens\Blind.png" alt="Olho fechado" class="eye-closed">
+                                <img src="\imagens\Eye.png" alt="Olho aberto" class="eye-open">
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn-login">Entrar</button>
+                    <div class="login-options">
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                    <div class="login-options">
+                        <p class="message">Não tem uma conta? </p><a href="#">Inscrever-se no Spotfluxo</a>
+                    </div>
                 </div>
-                <button class="btn-login">Entrar</button>
             </div>
         </div>
     </div>
